@@ -9,7 +9,7 @@ const Hero = () => {
       </h1>
       <form
         action="/search"
-        className="bg-white flex items-center p-4 rounded relative"
+        className="bg-white flex items-center p-4 rounded relative border border-gray-300"
       >
         <IoSearchOutline className="w-5 h-5 text-neutral-300 mr-2" />
         <input

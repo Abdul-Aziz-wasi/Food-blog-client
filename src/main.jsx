@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Home from "./Pages/Home/Home.jsx";
 import ErrorPage from "./Components/ErrorPage/ErrorPage.jsx";
+import CategoryPage from "./Pages/Category/CategoryPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
         path: "/",
         Component: Home,
       },
+      {
+        path:"/categories/:category",
+        element:<CategoryPage></CategoryPage>
+      }
     ],
   },
 ]);

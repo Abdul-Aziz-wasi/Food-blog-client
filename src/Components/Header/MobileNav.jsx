@@ -17,7 +17,7 @@ const MobileNav = ({ menuItems, onClose, hide, onOpen }) => {
       </button>
 
       <div
-        className={`transition-all w-full h-full fixed top-0 flex justify-center items-center z-50 ${hide}`}
+        className={`transition-all w-full h-full fixed top-0 bg-white flex justify-center items-center z-50 ${hide}`}
       >
         <button onClick={onClose} className="absolute right-8 top-32">
           <RxCross1 className="w-7 h-7" />
@@ -36,7 +36,7 @@ const MobileNav = ({ menuItems, onClose, hide, onOpen }) => {
           <ul className="flex items-center gap-4 font-medium mt-10">
             <li>
               <button className="px-2 py-4 rounded border btn">Log In</button>
-              <button className="px-2 py-4 rounded border btn">Sign Up</button>
+              <button className="px-2 py-4 rounded border btn ml-2">Sign Up</button>
             </li>
           </ul>
         </div>
